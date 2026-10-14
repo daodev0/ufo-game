@@ -2,9 +2,60 @@
 
 [ext_resource type="PackedScene" uid="uid://cndyibcv7xomb" path="res://Scenes/fondo_parallax.tscn" id="1_3givb"]
 [ext_resource type="PackedScene" uid="uid://bixuy85svynk7" path="res://Scenes/player.tscn" id="2_ecx5m"]
+[ext_resource type="PackedScene" uid="uid://bn5vuu0o2xpv3" path="res://Scenes/rotary_star.tscn" id="2_kyajb"]
+[ext_resource type="PackedScene" uid="uid://bx0wrwinkm7wo" path="res://Scenes/rotary_star_2.tscn" id="3_ql53f"]
+[ext_resource type="PackedScene" uid="uid://dyc08wrhntbwb" path="res://Scenes/big_stars.tscn" id="4_xvap8"]
+[ext_resource type="PackedScene" uid="uid://cw6rl3obcbbfs" path="res://Scenes/shadow.tscn" id="5_ql53f"]
+[ext_resource type="PackedScene" uid="uid://dysryq8qbh6ny" path="res://Scenes/big_star_2.tscn" id="5_rjvxo"]
+[ext_resource type="PackedScene" uid="uid://diesv5y18o8cr" path="res://Scenes/black_hole.tscn" id="6_61jm7"]
+[ext_resource type="PackedScene" uid="uid://cfia8oho38bx1" path="res://Scenes/shadow_2.tscn" id="6_xvap8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p0wcr"]
+size = Vector2(638, 7.5)
 
 [node name="Nivel1" type="Node2D" unique_id=839978761]
 
 [node name="FondoParallax" parent="." unique_id=108088019 instance=ExtResource("1_3givb")]
 
+[node name="Shadow1" parent="FondoParallax" unique_id=2086054274 instance=ExtResource("5_ql53f")]
+visible = false
+autoplay = "SHADOW1"
+
+[node name="Shadows2" parent="FondoParallax" unique_id=1131078382 instance=ExtResource("6_xvap8")]
+visible = false
+autoplay = "default"
+
+[node name="RotaryStars" parent="FondoParallax" unique_id=1685969362 instance=ExtResource("2_kyajb")]
+
+[node name="RotaryStar2" parent="FondoParallax" unique_id=1044056930 instance=ExtResource("3_ql53f")]
+
+[node name="BlackHole" parent="FondoParallax" unique_id=448297346 instance=ExtResource("6_61jm7")]
+
+[node name="BigStars1" parent="FondoParallax" unique_id=1170972641 instance=ExtResource("4_xvap8")]
+
+[node name="BigStar2" parent="FondoParallax" unique_id=1023489953 instance=ExtResource("5_rjvxo")]
+
 [node name="Player" parent="." unique_id=744098442 instance=ExtResource("2_ecx5m")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1125077589]
+zoom = Vector2(0.759, 0.759)
+
+[node name="Limites" type="StaticBody2D" parent="." unique_id=2114231507]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Limites" unique_id=1258640038]
+position = Vector2(0, -181)
+shape = SubResource("RectangleShape2D_p0wcr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limites" unique_id=104153929]
+position = Vector2(0, 181)
+shape = SubResource("RectangleShape2D_p0wcr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Limites" unique_id=535607485]
+position = Vector2(319.526, 0)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_p0wcr")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Limites" unique_id=1609287044]
+position = Vector2(-319, 0)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_p0wcr")

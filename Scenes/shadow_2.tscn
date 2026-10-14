@@ -2,36 +2,64 @@
 
 [ext_resource type="Texture2D" uid="uid://bn6ta325f5aop" path="res://Assets/Backgrounds/PNGs/Split up/Starry background  - Layer 02 - Shadows 2.png" id="1_5ilv7"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_y0cnd"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_fa8of"]
 atlas = ExtResource("1_5ilv7")
-region = Rect2(0, 0, 1440, 360)
+region = Rect2(0, 0, 720, 360)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7fbea"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_kynq3"]
 atlas = ExtResource("1_5ilv7")
-region = Rect2(1440, 0, 1440, 360)
+region = Rect2(720, 0, 720, 360)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m8ykn"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_05yvy"]
 atlas = ExtResource("1_5ilv7")
-region = Rect2(2880, 0, 1440, 360)
+region = Rect2(1440, 0, 720, 360)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kkw23"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_34aow"]
 atlas = ExtResource("1_5ilv7")
-region = Rect2(4320, 0, 1440, 360)
+region = Rect2(2160, 0, 720, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mogue"]
+atlas = ExtResource("1_5ilv7")
+region = Rect2(2880, 0, 720, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_id5rm"]
+atlas = ExtResource("1_5ilv7")
+region = Rect2(3600, 0, 720, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28bds"]
+atlas = ExtResource("1_5ilv7")
+region = Rect2(4320, 0, 720, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u37kd"]
+atlas = ExtResource("1_5ilv7")
+region = Rect2(5040, 0, 720, 360)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y7865"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_y0cnd")
+"texture": SubResource("AtlasTexture_fa8of")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7fbea")
+"texture": SubResource("AtlasTexture_kynq3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m8ykn")
+"texture": SubResource("AtlasTexture_05yvy")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kkw23")
+"texture": SubResource("AtlasTexture_34aow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mogue")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_id5rm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28bds")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u37kd")
 }],
 "loop": 1,
 "name": &"default",
@@ -40,3 +68,4 @@ animations = [{
 
 [node name="Shadows2" type="AnimatedSprite2D" unique_id=1131078382]
 sprite_frames = SubResource("SpriteFrames_y7865")
+frame_progress = 0.89896244
