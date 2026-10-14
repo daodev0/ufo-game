@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://dysryq8qbh6ny" path="res://Scenes/big_star_2.tscn" id="5_rjvxo"]
 [ext_resource type="PackedScene" uid="uid://diesv5y18o8cr" path="res://Scenes/black_hole.tscn" id="6_61jm7"]
 [ext_resource type="PackedScene" uid="uid://cfia8oho38bx1" path="res://Scenes/shadow_2.tscn" id="6_xvap8"]
+[ext_resource type="Script" uid="uid://cdl1vee7l4828" path="res://Scenes/spawner.gd" id="10_xvap8"]
+[ext_resource type="PackedScene" uid="uid://2m2u7s1hrivr" path="res://Scenes/meteoritos.tscn" id="11_rjvxo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p0wcr"]
 size = Vector2(638, 7.5)
@@ -59,3 +61,9 @@ shape = SubResource("RectangleShape2D_p0wcr")
 position = Vector2(-319, 0)
 rotation = 1.5707964
 shape = SubResource("RectangleShape2D_p0wcr")
+
+[node name="Spawner" type="Marker2D" parent="." unique_id=1006554929 node_paths=PackedStringArray("player")]
+gizmo_extents = 0.0
+script = ExtResource("10_xvap8")
+meteor_scene = ExtResource("11_rjvxo")
+player = NodePath("../Player")

@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://2m2u7s1hrivr"]
+
+[ext_resource type="Script" uid="uid://c3gjopd6ve2f7" path="res://meteoritos.gd" id="1_q4c7d"]
+[ext_resource type="Texture2D" uid="uid://qsr5t1o6i6l0" path="res://Assets/Asteroids/PNGs/Asteroid 01 - Base.png" id="2_xmhu0"]
+[ext_resource type="Texture2D" uid="uid://ctffw1wkihq3w" path="res://Assets/Asteroids/PNGs/Asteroid 01 - Explode.png" id="3_o8rqk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kye4e"]
+atlas = ExtResource("3_o8rqk")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e83tn"]
+atlas = ExtResource("3_o8rqk")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxsh0"]
+atlas = ExtResource("3_o8rqk")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_of3r0"]
+atlas = ExtResource("3_o8rqk")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p7p7k"]
+atlas = ExtResource("3_o8rqk")
+region = Rect2(384, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47uir"]
+atlas = ExtResource("3_o8rqk")
+region = Rect2(480, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8eodu"]
+atlas = ExtResource("3_o8rqk")
+region = Rect2(576, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txd68"]
+atlas = ExtResource("3_o8rqk")
+region = Rect2(672, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y7865"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xmhu0")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kye4e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e83tn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxsh0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_of3r0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p7p7k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47uir")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8eodu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txd68")
+}],
+"loop": 1,
+"name": &"explosion",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p0wcr"]
+
+[node name="Meteoritos" type="Area2D" unique_id=487359615]
+script = ExtResource("1_q4c7d")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=687631089]
+sprite_frames = SubResource("SpriteFrames_y7865")
+autoplay = "default"
+frame_progress = 0.6571743
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=830624559]
+shape = SubResource("CircleShape2D_p0wcr")
