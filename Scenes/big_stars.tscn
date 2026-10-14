@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://dyc08wrhntbwb"]
+
+[ext_resource type="Texture2D" uid="uid://ce6jtkybps1t5" path="res://Assets/Backgrounds/PNGs/Split up/Starry background - Layer X - Big Star.png" id="1_q63jo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gogur"]
+atlas = ExtResource("1_q63jo")
+region = Rect2(0, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55yie"]
+atlas = ExtResource("1_q63jo")
+region = Rect2(640, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ad6er"]
+atlas = ExtResource("1_q63jo")
+region = Rect2(1280, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ev73y"]
+atlas = ExtResource("1_q63jo")
+region = Rect2(1920, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4p25"]
+atlas = ExtResource("1_q63jo")
+region = Rect2(2560, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7hmtb"]
+atlas = ExtResource("1_q63jo")
+region = Rect2(3200, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dovn"]
+atlas = ExtResource("1_q63jo")
+region = Rect2(3840, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_72kyy"]
+atlas = ExtResource("1_q63jo")
+region = Rect2(4480, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0gfd"]
+atlas = ExtResource("1_q63jo")
+region = Rect2(5120, 0, 640, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p0wcr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gogur")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55yie")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ad6er")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ev73y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4p25")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7hmtb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5dovn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_72kyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0gfd")
+}],
+"loop": 1,
+"name": &"BIGSTAR1",
+"speed": 5.0
+}]
+
+[node name="BigStars1" type="AnimatedSprite2D" unique_id=1170972641]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_p0wcr")
+animation = &"BIGSTAR1"
+autoplay = "BIGSTAR1"

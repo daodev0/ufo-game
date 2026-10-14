@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://bx0wrwinkm7wo"]
+
+[ext_resource type="Texture2D" uid="uid://chiprx5chgp7q" path="res://Assets/Backgrounds/PNGs/Split up/Starry background - Layer X -Rotary Star 2.png" id="1_vqwol"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pofpm"]
+atlas = ExtResource("1_vqwol")
+region = Rect2(0, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p163n"]
+atlas = ExtResource("1_vqwol")
+region = Rect2(640, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfdkd"]
+atlas = ExtResource("1_vqwol")
+region = Rect2(1280, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h8w17"]
+atlas = ExtResource("1_vqwol")
+region = Rect2(1920, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybbtd"]
+atlas = ExtResource("1_vqwol")
+region = Rect2(2560, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxcwh"]
+atlas = ExtResource("1_vqwol")
+region = Rect2(3200, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7f1i2"]
+atlas = ExtResource("1_vqwol")
+region = Rect2(3840, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4vwf"]
+atlas = ExtResource("1_vqwol")
+region = Rect2(4480, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12qgf"]
+atlas = ExtResource("1_vqwol")
+region = Rect2(5120, 0, 640, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p0wcr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pofpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p163n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hfdkd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h8w17")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ybbtd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxcwh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7f1i2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4vwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12qgf")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="RotaryStar2" type="AnimatedSprite2D" unique_id=1044056930]
+sprite_frames = SubResource("SpriteFrames_p0wcr")
+autoplay = "default"

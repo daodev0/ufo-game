@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cndyibcv7xomb"]
+
+[ext_resource type="Texture2D" uid="uid://bkpe8qvwm6h74" path="res://Assets/Backgrounds/PNGs/Split up/Starry background  - Layer 01 - Solid colour.png" id="1_8e1wg"]
+[ext_resource type="PackedScene" uid="uid://cnavo0sl2s6jb" path="res://Scenes/stars.tscn" id="4_s44ek"]
+[ext_resource type="PackedScene" uid="uid://bs5vb3q3h8rac" path="res://Scenes/stars_2.tscn" id="5_1ycec"]
+
+[node name="FondoParallax" type="Node2D" unique_id=2084770573]
+
+[node name="Solido" type="Parallax2D" parent="." unique_id=1193260692]
+scale = Vector2(0.3, 0.3)
+scroll_scale = Vector2(0, 0)
+repeat_size = Vector2(1728, 360)
+repeat_times = 9
+
+[node name="Sprite2D" type="Sprite2D" parent="Solido" unique_id=1835646377]
+texture = ExtResource("1_8e1wg")
+
+[node name="Estrellas" type="Parallax2D" parent="." unique_id=2048497804]
+scale = Vector2(0.3, 0.3)
+scroll_scale = Vector2(0, 0)
+repeat_size = Vector2(1930.46, 360)
+repeat_times = 9
+
+[node name="Stars" parent="Estrellas" unique_id=1368602713 instance=ExtResource("4_s44ek")]
+
+[node name="Estrellas2" type="Parallax2D" parent="." unique_id=1167258635]
+scale = Vector2(0.3, 0.3)
+scroll_scale = Vector2(0.01, 0.01)
+repeat_size = Vector2(1944.042, 360)
+repeat_times = 9
+
+[node name="Stars2" parent="Estrellas2" unique_id=1186796665 instance=ExtResource("5_1ycec")]
+frame_progress = 0.49627137

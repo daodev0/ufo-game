@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cfia8oho38bx1"]
+
+[ext_resource type="Texture2D" uid="uid://bn6ta325f5aop" path="res://Assets/Backgrounds/PNGs/Split up/Starry background  - Layer 02 - Shadows 2.png" id="1_5ilv7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0cnd"]
+atlas = ExtResource("1_5ilv7")
+region = Rect2(0, 0, 1440, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7fbea"]
+atlas = ExtResource("1_5ilv7")
+region = Rect2(1440, 0, 1440, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8ykn"]
+atlas = ExtResource("1_5ilv7")
+region = Rect2(2880, 0, 1440, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkw23"]
+atlas = ExtResource("1_5ilv7")
+region = Rect2(4320, 0, 1440, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y7865"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0cnd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7fbea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8ykn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkw23")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Shadows2" type="AnimatedSprite2D" unique_id=1131078382]
+sprite_frames = SubResource("SpriteFrames_y7865")

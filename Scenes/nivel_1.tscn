@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c8itmwwx60k2d"]
+
+[ext_resource type="PackedScene" uid="uid://cndyibcv7xomb" path="res://Scenes/fondo_parallax.tscn" id="1_3givb"]
+[ext_resource type="PackedScene" uid="uid://bixuy85svynk7" path="res://Scenes/player.tscn" id="2_ecx5m"]
+
+[node name="Nivel1" type="Node2D" unique_id=839978761]
+
+[node name="FondoParallax" parent="." unique_id=108088019 instance=ExtResource("1_3givb")]
+
+[node name="Player" parent="." unique_id=744098442 instance=ExtResource("2_ecx5m")]

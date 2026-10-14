@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://diesv5y18o8cr"]
+
+[ext_resource type="Texture2D" uid="uid://ds7r6v05073b0" path="res://Assets/Backgrounds/PNGs/Split up/Starry background - Layer X -Black hole.png" id="1_yqibl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcnit"]
+atlas = ExtResource("1_yqibl")
+region = Rect2(0, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjqa0"]
+atlas = ExtResource("1_yqibl")
+region = Rect2(640, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cv587"]
+atlas = ExtResource("1_yqibl")
+region = Rect2(1280, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wn18u"]
+atlas = ExtResource("1_yqibl")
+region = Rect2(1920, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ratl1"]
+atlas = ExtResource("1_yqibl")
+region = Rect2(2560, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ovth"]
+atlas = ExtResource("1_yqibl")
+region = Rect2(3200, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hx7ua"]
+atlas = ExtResource("1_yqibl")
+region = Rect2(3840, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lasnm"]
+atlas = ExtResource("1_yqibl")
+region = Rect2(4480, 0, 640, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjypq"]
+atlas = ExtResource("1_yqibl")
+region = Rect2(5120, 0, 640, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p0wcr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcnit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjqa0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cv587")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wn18u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ratl1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ovth")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hx7ua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lasnm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjypq")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="BlackHole" type="AnimatedSprite2D" unique_id=448297346]
+sprite_frames = SubResource("SpriteFrames_p0wcr")
+autoplay = "default"

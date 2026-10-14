@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bs5vb3q3h8rac"]
+
+[ext_resource type="Texture2D" uid="uid://c1p5fv7xds2cq" path="res://Assets/Backgrounds/PNGs/Split up/Starry background  - Layer 03 - Stars 2.png" id="1_2thsa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2thsa"]
+atlas = ExtResource("1_2thsa")
+region = Rect2(0, 0, 1920, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwk0q"]
+atlas = ExtResource("1_2thsa")
+region = Rect2(1920, 0, 1920, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gamge"]
+atlas = ExtResource("1_2thsa")
+region = Rect2(3840, 0, 1920, 360)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p0wcr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2thsa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwk0q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gamge")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Stars2" type="AnimatedSprite2D" unique_id=1368602713]
+sprite_frames = SubResource("SpriteFrames_p0wcr")
+autoplay = "default"
+frame = 2
+frame_progress = 0.5431873
